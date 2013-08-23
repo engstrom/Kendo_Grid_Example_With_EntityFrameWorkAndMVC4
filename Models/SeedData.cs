@@ -1,9 +1,5 @@
-﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Data.Entity;
-
 
 namespace KendoUI.Models
 {
@@ -13,7 +9,6 @@ namespace KendoUI.Models
 
         protected override void Seed(MicropowerMembersEntities context)
         {
-
 
             new List<ContactModel>
             {
@@ -32,17 +27,6 @@ namespace KendoUI.Models
                new ContactModel {   LastName = "Watson", FirstName = "Hulie" ,  OverEighteen=true, Salary=0, DOB = new System.DateTime(1976,12,25)  },
               
               }.ForEach(a => context.Contacts.Add(a));
-
-
-
-
-
-
         }
-
-
-
-
-
     }
 }
